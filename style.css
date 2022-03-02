@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.chat__container {
+  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+  background-color: #1a242e;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chat__title {
+  color: #fff;
+}
+
+.chat__status {
+  font-size: 1.2rem;
+}
+
+.chat__msg-time,
+.chat__status,
+.chat__send-msg-btn {
+  color: #8b97a3;  
+}
+
+.chat__messages {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  flex: 0 1 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(45deg, #162431, #131a2a) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  box-shadow: inset 0 0 4px 0 black;
+}
+
+.chat__send-msg-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem
+}
+
+.chat__send-msg-text,
+.chat__send-msg-btn {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+.chat__send-msg-text {
+  flex: 0 1 100%;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  color: #fff;
+  box-shadow: inset 0 0 4px 0 black;
+  outline: none;
+  border: none;
+}
+
+.chat__send-msg-text::placeholder {
+  color: #4b494c;
+}
+
+.chat__send-msg-btn {
+  background-color: #3e6189;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0 4px 0 black;
+}
+
+.chat__msg-block {
+  padding: 0.3rem 0.6rem;
+  min-width: 20%;
+  border-radius: 1rem;
+  box-shadow: 0 0 4px 0 black;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__msg-block--host {
+  align-self: flex-end;
+  background-color: #3e6189;
+}
+
+.chat__msg-block--guest {
+  align-self: flex-start;
+  background-color: #222e3a;
+}
+
+.chat__msg-owner {
+  font-weight: 600;
+}
+
+.chat__msg-block--host > .chat__msg-owner {
+  color: #79c4fd;
+}
+
+.chat__msg-block--guest > .chat__msg-owner {
+  color: #ffc95f;
+}
+
+.chat__msg-text {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.1rem;
+  align-self: flex-start;
+}
+
+.chat__msg-time {
+  font-weight: 400;
+  font-size: 0.8rem;
+  align-self: flex-end;
+}
